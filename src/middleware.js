@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001','http://192.168.67.232:3000']; // Add allowed origins
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001','http://192.168.67.232:3000','https://newrenewabledashboard.netlify.app/']; // Add allowed origins
 
 export function middleware(request) {
     const origin = request.headers.get('origin') ?? '';
